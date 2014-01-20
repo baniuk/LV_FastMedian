@@ -1,5 +1,5 @@
 /**
- * \file    LV_FasrMedian.cpp
+ * \file    LV_FastMedian.cpp
  * \brief	Implementacja szybkiej mediany oparta o poprzedni projekt.
  * \author  PB
  * \date    2012/09/08
@@ -58,10 +58,6 @@ void CopyWindow( OBRAZ *input_image, unsigned short mask, unsigned int current_r
 	unsigned short bok_maski = (mask-1)/2;
 	unsigned int l;	// licznik
 	memset(hist, 0, GRAYSCALE*sizeof(unsigned int));	// szybkie zerowanie pamiêci histogramu (dla kazdego rzêdu procedura dzia³a od pocz¹tku)
-//	_ASSERT(current_row-bok_maski<current_row);	// wykrywanie przepe³nienia, jeœli z³y punkt startowy
-//	_ASSERT(current_col-bok_maski<current_col);	// wykrywanie przepe³nienia, jeœli z³y punkt startowy
-//	_ASSERT(current_row+bok_maski<input_image->rows);	// koñcówka obrazu
-//	_ASSERT(current_col+bok_maski<input_image->cols);	// koñcówka obrazu
 	for (wr = static_cast<int>(current_row)-bok_maski,l=0;wr<static_cast<int>(current_row)+bok_maski+1;wr++)	
 		for (wk = static_cast<int>(current_col)-bok_maski;wk<static_cast<int>(current_col)+bok_maski+1;wk++)
 			{

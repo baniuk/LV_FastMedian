@@ -16,7 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
-    <Text Include="History.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -25,10 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fastMedian.h">
+    <ClInclude Include="C_Matrix_Container.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="C_DumpAll.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,21 +35,14 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LV_FastMedian.cpp">
+    <ClCompile Include="LV_FastMedian_Caller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dllmain.cpp">
+    <ClCompile Include="C_Matrix_Container.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="LV_FastMedian.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="LV_FastMedian.rc2">
-      <Filter>Resource Files</Filter>
-    </None>
+    <ClCompile Include="C_DumpAll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
